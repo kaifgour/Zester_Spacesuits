@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zester Rockets</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="min-h-100vh bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-emerald-600 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🚀Zester SpaceSuits</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl focus:outline-none md:hidden cursor-pointer"
+          >
+            &#9776;
+          </button>
+          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+            <a href="#spacesuits" class="hover:opacity-90">SpaceSuits</a>
+            <a href="#testomonial" class="hover:opacity-90">Testomonial</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >Home</a
+          >
+          <a href="#spacesuits" class="w-full text-center py-6 hover:opacity-90"
+            >SpaceSuits</a
+          >
+          <a
+            href="#testomonial"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testomonial</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+          >
+            Fuel Your Dreams with
+            <span class="text-emerald-700 dark:text-emerald-500"
+              >Zester SpaceSuits!
+            </span>
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            At Zester, we're passionate about propelling dreams into reality.
+            With a mission to make the wonders of space exploration accessible
+            to all!
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-200"
+          >
+            Unleash Your Inner Astronaut!
+          </p>
+        </article>
+        <img class="w-1/2" src="img/main-suit.png" alt="Rocket Dab" />
+      </section>
+      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
+      <section
+        id="spacesuits"
+        class="p-6 my-16 scroll-m-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="p-6 text-4xl text-center sm:text-5xl font-bold dark:text-white text-slate-900 mb-6"
+        >
+          Our SpaceSuits
+        </h2>
+        <ul
+          class="list-none my-auto flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="./img/Suit-1-bg.png"
+              alt="suit-1"
+              class="w-1/2 mb-6 mt-2"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Starfleet Standard
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $
+            </p>
+            <p
+              class="text-xl sm:hidden text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Affordable Gear for Space Adventure
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl h-auto"
+          >
+            <img
+              src="./img/Suit-2-bg.png"
+              alt="suit-2"
+              class="w-1/2 mb-8 mt-4"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Galactic Guardian
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $$
+            </p>
+            <p
+              class="text-xl sm:hidden text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Best Selling Compact Modular Gear
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="./img/Suit-3-bg.png"
+              alt="suit-3"
+              class="w-1/2 mb-6 mt-4"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Zero-Gravity Gear
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $$$
+            </p>
+            <p
+              class="text-xl sm:hidden text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Go Infinity with Zero Gravity Gear
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
+      <section
+        id="testomonial"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="p-6 text-4xl text-center sm:text-5xl font-bold dark:text-white text-slate-900"
+        >
+          Testomonial
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-emerald-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-8xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-6 after:right-5 after:text-8xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              From the moment I slipped into my Galactic Guardian spacesuit, I
+              knew I was ready for anything the cosmos could throw at me. Thanks
+              to this remarkable suit, I felt secure and empowered to explore
+              the unknown depths of space
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-300"
+          >
+            &#8212;Alex M., Space Explorer
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-emerald-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-8xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-6 after:right-5 after:text-8xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              The Zero-Gravity spacesuit surpassed all my expectations during my
+              lunar expedition. Its rugged construction and innovative features
+              made traversing the lunar surface a breeze. This suit is truly a
+              testament to the ingenuity of modern space technology.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-300"
+          >
+            &#8212;Emily W., Lunar Researcher
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-emerald-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-8xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-6 after:right-5 after:text-8xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              As an astronaut, I've worn many spacesuits throughout my career,
+              but none have compared to the comfort and functionality of
+              Galactic Guardian Gear. Its customizable design allowed me to
+              tailor it to my specific needs, while its durability and
+              versatility ensured I could perform my duties with ease, even in
+              the harshest of environments. Simply put, it's the ultimate
+              companion for any space mission.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-300"
+          >
+            &#8212;Captain Tom R., NASA Astronaut
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="p-6 text-4xl text-center sm:text-5xl font-bold dark:text-white text-slate-900"
+        >
+          Contact Us
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+          <button
+            class="bg-emerald-700 hover:bg-emerald-600 active:bg-emerald-700 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="bg-emerald-700 text-white text-xl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Zester Spacesuit Headquarters</h2>
+          123 Galactic Avenue<br />Cosmos City, Space Sector 001 <br />United
+          Galactic Federation <br />
+          Email:<a href="mailto:info@zesterspacesuit.com"
+            >info@zesterspacesuit.com</a
+          ><br />
+          Phone:<a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#spacesuits" class="hover:opacity-90">SpaceSuits</a>
+          <a href="#testimonial" class="hover:opacity-90">Testomonial</a>
+          <a href="#contact" class="hover:opacity-90">Contact</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">
+            Copyright &copy; <span id="currentYear"></span>
+          </p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    </script>
+  </body>
+</html>
